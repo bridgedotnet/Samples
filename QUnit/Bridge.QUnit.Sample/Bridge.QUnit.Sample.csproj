@@ -31,17 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Bridge\sample\qunit\App.cs" />
-    <Compile Include="Bridge\sample\qunit\Code.cs" />
+    <Compile Include="Bridge\samples\qunit\App.cs" />
+    <Compile Include="Bridge\samples\qunit\Code.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Bridge\sample\qunit\Test.cs" />
+    <Compile Include="Bridge\samples\qunit\Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Readme\Bridge.NET\LICENSE.txt" />
     <Content Include="App_Readme\Bridge.NET\README.txt" />
     <Content Include="Bridge\output\readme.txt" />
-    <Content Include="Bridge\sample\qunit\www\app.html" />
-    <Content Include="Bridge\sample\qunit\www\test.html" />
+    <Content Include="Bridge\samples\qunit\www\app.html" />
+    <Content Include="Bridge\samples\qunit\www\test.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Bridge\bridge.json" />
