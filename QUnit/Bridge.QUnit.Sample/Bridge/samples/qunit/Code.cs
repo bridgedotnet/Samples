@@ -3,14 +3,14 @@ using Bridge.Html5;
 
 namespace BridgeQUnitSample
 {
-    [FileName("../sample/qunit/output/code.js")]
+    [FileName("../samples/qunit/output/code.js")]
     public class Person
     {
         public int Id { get; set; }
         public string Name { get; set; }
     }
 
-    [FileName("../sample/qunit/output/code.js")]
+    [FileName("../samples/qunit/output/code.js")]
     public class PersonService
     {
         public Person GetPerson(int personId)
@@ -23,7 +23,7 @@ namespace BridgeQUnitSample
         }
     }
 
-    [FileName("../sample/qunit/output/code.js")]
+    [FileName("../samples/qunit/output/code.js")]
     public class PersonView
     {
         public Element Root { get; private set; }
@@ -56,7 +56,7 @@ namespace BridgeQUnitSample
         }
     }
 
-    [FileName("../sample/qunit/output/code.js")]
+    [FileName("../samples/qunit/output/code.js")]
     public class PersonApplication
     {
         public PersonService Service { get; private set; }

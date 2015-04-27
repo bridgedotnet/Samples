@@ -1,10 +1,10 @@
 ﻿using Bridge;
 using Bridge.Html5;
-using Bridge.QUnit1;
+using Bridge.QUnit;
 
 namespace BridgeQUnitSample
 {
-    [FileName("../sample/qunit/output/test.js")]
+    [FileName("../samples/qunit/output/test.js")]
     public class Test
     {
         [Ready]

@@ -6,7 +6,7 @@ using Bridge.Html5;
 
 namespace BridgeQUnitSample
 {
-    [FileName("../sample/qunit/output/app.js")]
+    [FileName("../samples/qunit/output/app.js")]
     public class App
     {
         [Ready]
