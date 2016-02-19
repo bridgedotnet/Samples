@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+    <id>Bridge.QUnit.Sample</id>
+    <version>0.0.0</version>
+    <title>Bridge.NET QUnit Sample</title>
+    <authors>Object.NET, Inc.</authors>
+    <iconUrl>http://speed.bridge.net/identity/bridgedotnet-100x100.png</iconUrl>
+    <owners />
+    <licenseUrl>https://github.com/bridgedotnet/Bridge/blob/master/LICENSE</licenseUrl>
+    <projectUrl>http://bridge.net</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>QUnit Sample installation into Bridge.NET projects.</description>
+    <summary>QUnit installation into Bridge.NET projects</summary>
+    <copyright>Copyright (c) 2008-2016, Object.NET, Inc. (http://object.net/). All rights reserved.</copyright>
+    <tags>QUnit unit testing bridge.net bridge js javascript C# csharp mobile ios asp.net aspnet mvc aspnetmvc web transpiler compiler object.net</tags>
+    <dependencies>
+      <dependency id="Bridge.QUnit" version="1.7.0" />
+    </dependencies>
+    <frameworkAssemblies>
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <!--content-->
+    <file src="..\..\QUnit\Bridge.QUnit.Sample\Bridge\samples\qunit\App.cs" target="content\Bridge\samples\qunit\"/>
+    <file src="..\..\QUnit\Bridge.QUnit.Sample\Bridge\samples\qunit\Code.cs" target="content\Bridge\samples\qunit\"/>
+    <file src="..\..\QUnit\Bridge.QUnit.Sample\Bridge\samples\qunit\Test.cs" target="content\Bridge\samples\qunit\"/>
+    <file src="..\..\QUnit\Bridge.QUnit.Sample\Bridge\samples\qunit\www\app.html" target="content\Bridge\samples\qunit\www\"/>
+    <file src="..\..\QUnit\Bridge.QUnit.Sample\Bridge\samples\qunit\www\test.html" target="content\Bridge\samples\qunit\www\"/>
+    <file src="..\..\QUnit\Bridge.QUnit.Sample\Bridge\samples\qunit\output\readme.txt" target="content\Bridge\samples\qunit\output"/>
+  </files>
+</package>

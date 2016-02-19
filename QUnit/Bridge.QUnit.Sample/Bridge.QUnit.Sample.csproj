@@ -77,11 +77,22 @@
     <Error Condition="!Exists('..\..\packages\Bridge.1.10.0\build\Bridge.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Bridge.1.10.0\build\Bridge.targets'))" />
   </Target>
   <Import Project="..\..\packages\Bridge.1.10.0\build\Bridge.targets" Condition="Exists('..\..\packages\Bridge.1.10.0\build\Bridge.targets')" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
+  <!-- NuGet packaging starts -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <NuGetBuildPackage>true</NuGetBuildPackage>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <NuGetPackageSourcePath Include="$(SolutionDir).build\specs\Bridge.QUnit.Sample.nuspec">
+      <Path>$(SolutionDir).build\specs\Bridge.QUnit.Sample.nuspec</Path>
+    </NuGetPackageSourcePath>
+  </ItemGroup>
+  <Import Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " Project="$(SolutionDir)\.build\common\NuGet.Build.Package.targets" />
+  <Target Name="CleanProjectNuGetOutput" BeforeTargets="Clean">
+    <ItemGroup>
+      <FilesToDelete Include="$(ProjectDir)$(OutDir)Bridge.*.nupkg" />
+    </ItemGroup>
+    <Message Text="Cleaning NuGet packages in $(ProjectDir)$(OutDir)" Importance="high" />
+    <Delete Files="@(FilesToDelete)" ContinueOnError="true" />
   </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+  <!-- NuGet packaging finishes -->
 </Project>

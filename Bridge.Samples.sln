@@ -16,6 +16,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.QUnit.Sample", "QUnit\Bridge.QUnit.Sample\Bridge.QUnit.Sample.csproj", "{1FA90461-AC19-46BC-BF6E-5BA88D8FF2D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specs", "specs", "{7EA8EB7E-E60B-4D86-B11E-BD89CBD5F1C0}"
+	ProjectSection(SolutionItems) = preProject
+		.build\specs\Bridge.QUnit.Sample.nuspec = .build\specs\Bridge.QUnit.Sample.nuspec
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{FBE84BAB-BCA1-44F0-9713-4206BBBD3256}"
 	ProjectSection(SolutionItems) = preProject
