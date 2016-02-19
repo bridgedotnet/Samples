@@ -8,11 +8,21 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{105998AB-4F7F-48FE-BB97-9E6F330DAC21}"
 	ProjectSection(SolutionItems) = preProject
 		.build\common\CommonAssemblyInfo.cs = .build\common\CommonAssemblyInfo.cs
+		.build\common\NuGet.Build.Package.targets = .build\common\NuGet.Build.Package.targets
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QUnit", "QUnit", "{89B03B1C-2C7E-4B76-8A0C-EFCE1A1EE851}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.QUnit.Sample", "QUnit\Bridge.QUnit.Sample\Bridge.QUnit.Sample.csproj", "{1FA90461-AC19-46BC-BF6E-5BA88D8FF2D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "specs", "specs", "{7EA8EB7E-E60B-4D86-B11E-BD89CBD5F1C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{FBE84BAB-BCA1-44F0-9713-4206BBBD3256}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,5 +41,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{105998AB-4F7F-48FE-BB97-9E6F330DAC21} = {16FF416E-9157-4B8A-80B8-65946FE29CE9}
 		{1FA90461-AC19-46BC-BF6E-5BA88D8FF2D2} = {89B03B1C-2C7E-4B76-8A0C-EFCE1A1EE851}
+		{7EA8EB7E-E60B-4D86-B11E-BD89CBD5F1C0} = {16FF416E-9157-4B8A-80B8-65946FE29CE9}
 	EndGlobalSection
 EndGlobal
