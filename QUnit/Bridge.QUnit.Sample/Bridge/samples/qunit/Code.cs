@@ -33,7 +33,7 @@ namespace BridgeQUnitSample
             this.Root = root;
         }
 
-        public LabelElement CreateLabelElement(string id, string title, string margin, bool isBold, HTMLColor color)
+        public LabelElement CreateLabelElement(string id, string title, string margin, bool isBold, string color)
         {
             return new LabelElement()
             {
